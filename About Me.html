@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <link type="text/css" rel="stylesheet" href="About%20Me.css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
     <section id="Logo">
 
-        <h1> <a href="Home.html">Alan's Amazing Website</a></h1>
+        <h1>Alan's Amazing Website</h1>
         <form id="searchbox" action="">
             <input id="Search" type="text" placeholder="Type here">
             <input id="Submit" type="submit" value="Search">
         </form>
     </section>
     <div id="Navigation">
-        <ul>
+        <ul id="quicklinks">
 
-            <li><img src="Assets/About%20me.png" alt="About me">
-                <a href="About%20Me.html">About Me</a> </li>
-            <li><img src="Assets/Academics.jpeg" alt="Academics">
+            <li><img src="Assets/WSP1.jpg" alt="Home" width="100px" height="100px">
+                <a href="Home.html">Home</a> </li>
+            <li><img src="Assets/Academics.jpeg" alt="Academics" width="100px" height="100px">
                 <a href="Academics.html">Academics and Achievements</a> </li>
-            <li><img src="Assets/Contact%20me.jpg" alt="Contact Me">
+            <li><img src="Assets/Emails.jpg" alt="Contact Me" width="100px" height="100px">
                 <a href="Contact%20Me.html">Contact Me</a> </li>
         </ul>
     </div>
 
 </header>
-<main>
-<section>
-    <img src="Assets/hobbies.png" alt="Hobbies">
+<main class="grid-container">
+<section class="grid-90">
+    <img id="hobbies" src="Assets/hobbies.png" alt="Hobbies" width="300px" align="left">
     <h1>Hobbies</h1>
     <p>I have a few hobbies which are as follows:</p>
-    <ul>
+    <ul id="hobbylist">
         <li>Video Games</li>
         <li>Football</li>
         <li>Creating model airplanes</li>
     </ul>
-    <p>I also have a youtube channel which can be seen here: [Placeholder for API]</p>
+    <p>I also have a youtube channel which can be seen here:</p>
+    <h2>[Placeholder for API]</h2>
 </section>
-    <section>
-        <img src="Assets/personal%20details.png" alt="Personal details">
+    <section class="grid-90">
+        <img id="family" src="Assets/family.jpg" alt="Personal details" width="300px">
         <h1>Personal Details</h1>
         <p>Just a few personal details</p>
-        <ul>
-            <li>Age:20</li>
+        <ul id="personallist">
+            <li>Age: 20</li>
             <li>Family: 2 Brothers and 1 Sister</li>
             <li>Birthday: June 2nd</li>
         </ul>

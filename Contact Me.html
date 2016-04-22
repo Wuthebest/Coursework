@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
+    <link type="text/css" rel="stylesheet" href="Contact%20Me.css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 <header>
     <section id="Logo">
 
-        <h1> <a href="Home.html">Alan's Amazing Website</a></h1>
+        <h1>Alan's Amazing Website</h1>
         <form id="searchbox" action="">
             <input id="Search" type="text" placeholder="Type here">
             <input id="Submit" type="submit" value="Search">
         </form>
     </section>
     <div id="Navigation">
-        <ul>
+        <ul id="quicklinks">
 
-            <li><img src="Assets/About%20me.png" alt="About me">
+            <li><img src="Assets/About.jpg" alt="About me" width="100px" height="100px">
                 <a href="About%20Me.html">About Me</a> </li>
-            <li><img src="Assets/Academics.jpeg" alt="Academics">
+            <li><img src="Assets/Academics.jpeg" alt="Academics" width="100px" height="100px">
                 <a href="Academics.html">Academics and Achievements</a> </li>
-            <li><img src="Assets/Contact%20me.jpg" alt="Contact Me">
-                <a href="Contact%20Me.html">Contact Me</a> </li>
+            <li><img src="Assets/WSP1.jpg" alt="Home" width="100px" height="100px">
+                <a href="Home.html">Home</a> </li>
+
         </ul>
     </div>
 
 </header>
-<main>
-    <img src="Assets/comment.png" alt="comment">
-    <section>
+<main class="grid-container">
+
+    <section class="grid-90">
+        <img id="commentimg" src="Assets/comment.jpg" alt="comment" width="200px" align="left">
         <form id="Commentbox">
             <fieldset>
-                <legend>Comment:</legend>
+                <legend>Please leave a comment...</legend>
                 <label for="name">Name:</label>
                 <input type="text" name="name" value="" />
                 <label for="Comment">Comment:</label>
@@ -43,10 +48,12 @@
         </form>
 
     </section>
-    <img src="Assets/mail.png" alt="mail">
-    <section>
-        <p>You can also contact me via e-mail at the following address: alanpaterson800@gmail.com.
+
+    <section class="grid-90">
+        <img id="email" src="Assets/mail.png" alt="mail" width="200px" align="left">
+        <p>You can also contact me via <a href="mailto:alanpaterson800@gmail.com">E-mail</a>.
             Alternatively, you can send me a letter to the address shown by the Google Maps API that is not functional yet.</p>
+        <h2>API Goes Here</h2>
     </section>
 </main>
 <footer>
